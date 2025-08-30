@@ -1,0 +1,12 @@
+{
+    "name": "node-server", 
+    "versão": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node --watch server.js"
+    },
+    "keywords": [],
+    "author": "Maria Vitoria",
+    "license":"ISC",
+    "description": "Proposta de servidor web realizado em sala de aula. Turma FS-26, Digital College Sul."
+}
