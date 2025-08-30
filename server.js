@@ -1,9 +1,25 @@
 
-const http = require('http');
+import http from "node:http";
 
-http.createServer((request, response) => {
+const PORT = 3333;
 
-    response.end("Hello!");
+ const server = http.createServer((request, response) => {
 
-}).listen(3333, 'localhost');
+    const {url, method} = request;
+
+    response.setHeader("Content-Type", "text/plain; charset=utf8")
+
+    response.write(`
+        Requisição na url: ${url}
+        Requisição no método: ${method}
+        `);
+
+
+    response.end();
+
+});
+
+server.listen(PORT, 'localhost', () =>{
+    console.log(`Server running at http://localhost:${PORT}.`);
+});
 

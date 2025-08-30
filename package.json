@@ -8,5 +8,6 @@
     "keywords": [],
     "author": "Maria Vitoria",
     "license":"ISC",
-    "description": "Proposta de servidor web realizado em sala de aula. Turma FS-26, Digital College Sul."
+    "description": "Proposta de servidor web realizado em sala de aula. Turma FS-26, Digital College Sul.",
+    "type": "module"
 }
